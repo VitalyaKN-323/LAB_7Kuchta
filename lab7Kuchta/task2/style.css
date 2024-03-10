@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+nav {
+    background-color: #2bd0db;
+    color: white;
+    text-align: center;
+    width: 30%;
+    padding: 1em;
+}
+.container {
+    flex-grow: 1;
+}
+
+
+
+header, nav, aside, main, footer {
+    border: 1px solid #27aa89; /* Додаємо межі для виділення областей */
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  header, nav {
+    float: left; /* Розташовуємо заголовок та меню в один рядок зліва направо */
+    width: 50%; /* Рівномірно розподіляємо простір між заголовком та меню */
+  }
+  
+  aside {
+    clear: both; /* Забезпечує, що додаткова секція буде розташована під заголовком та меню */
+  }
+  
+  main {
+    width: 100%; /* Розташовуємо вміст на всю ширину сторінки */
+  }
+  
+  footer {
+    clear: both; /* Забезпечує, що нижній колонтитул буде розташований під усіма іншими елементами */
+  }
+  aside, nav {
+    float: left; /* Розташовуємо обидва елементи в один рядок зліва направо */
+    width: 50%; /* Рівномірно розподіляємо простір між додатковою секцією та вмістом */
+  }
+  
+  aside {
+    clear: both; /* Забезпечує, що додаткова секція буде розташована на початку рядка */
+  }
+  
